@@ -8,7 +8,16 @@ class Navbar extends Component {
         return (
             <div className="navbar">
                 <ul>  
-                    <li>
+                    <li className="page-title">                        
+                        <Link
+                        to="home"
+                        spy={false}
+                        smooth={true}
+                        offset={0}
+                        duration={400}
+                        >ROBERTO ARRUDA KANG</Link>
+                    </li>
+                    <li className="teste">
                         <Link
                         activeClass='active'
                         to="home"
@@ -18,7 +27,7 @@ class Navbar extends Component {
                         duration={400}
                         >INÍCIO</Link>
                     </li>
-                    <li>
+                    <li className="teste">
                         <Link
                         activeClass='active'
                         to="skills"

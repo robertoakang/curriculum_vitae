@@ -12,8 +12,7 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="container" id="teste">
-      {/* <img src={logo} alt="AirCnC"/> */}
+    <div className="container">
         <Navbar />
         <Home />
         <ProfessionalSkills />
