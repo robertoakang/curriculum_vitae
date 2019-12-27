@@ -137,9 +137,9 @@ li a {
   -webkit-box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,1);
   box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,1);
-  /* background: #000 url('./assets/photo.jpeg') no-repeat; */
+  background: #000 url('./assets/photo.jpeg') no-repeat;
   /* background: #000 url('./assets/photo-bw.jpg') no-repeat; */
-  background: #000;
+  /* background: #000; */
   background-position: center top 0px;  
   background-size: cover;
 }
