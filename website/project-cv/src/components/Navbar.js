@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 
-class Navbar extends Component {
-    state = {};
+// $(document).on("scroll",function(){
+//     if($(document).scrollTop()>100){ //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+//         $("header").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
+//     } else{
+//         $("header").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
+//     }
+// });
 
+class Navbar extends Component {
     render() {
         return (
             <div className="navbar">
@@ -45,7 +51,7 @@ class Navbar extends Component {
                         smooth={true}
                         offset={0}
                         duration={400}
-                        >TESTE!</Link>
+                        >EXPERIÊNCIA</Link>
                     </li>
                     <li>
                         <Link
@@ -55,7 +61,7 @@ class Navbar extends Component {
                         smooth={true}
                         offset={0}
                         duration={400}
-                        >TESTE</Link>
+                        >CURRÍCULO</Link>
                     </li>
                     <li>
                         <Link

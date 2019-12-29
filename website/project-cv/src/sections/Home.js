@@ -1,5 +1,11 @@
+/* Importing frameworks and libraries */
 import React, { Component } from 'react';
+import AOS from 'aos';
 
+/* Importing CSS */
+import 'aos/dist/aos.css';
+
+/* Importing assets */
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import facebook from '../assets/facebook.png'
@@ -7,13 +13,17 @@ import instagram from '../assets/instagram.png'
 
 class Home extends Component {
     render() {
+        AOS.init({
+        duration: 1200,
+        });
+      
         return (
             <div className="home-section" id="home">
                 <div className="home-section-body">
                     <div className="home-section-header"></div>
                     <div className="home-section-center">
                         <div className="home-section-center-photo" />
-                        <div className="home-section-center-info">
+                        <div className="home-section-center-info" data-aos="fade">
                             <div className="home-section-center-info-text">
                                 <p style={{fontFamily: "'Forum', cursive", fontWeight: "bold", letterSpacing: "1px"}}>Roberto Arruda Kang</p>
                                 <p style={{fontSize: "0.8em", marginTop: "5px", letterSpacing: "1.5px"}}>DESENVOLVEDOR FRONT-END/FULLSTACK</p>
@@ -33,13 +43,13 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="home-section-center-footer">
-                            <p><a href="https://www.linkedin.com/in/roberto-arruda-kang-8145a7186/" target="_blank"><img src={linkedin} class="home-section-center-socials"/></a></p>
-                            <p><a href="https://github.com/robertoakang" target="_blank"><img src={github} class="home-section-center-socials" /></a></p>
-                            <p><a href="https://github.com/robertoakang" target="_blank"><img src={facebook} class="home-section-center-socials" /></a></p>
-                            <p><a href="https://github.com/robertoakang" target="_blank"><img src={instagram} class="home-section-center-socials" /></a></p>
+                            <p data-aos="fade-up"><a href="https://www.linkedin.com/in/roberto-arruda-kang-8145a7186/" target="_blank" rel="noopener noreferrer"><img src={linkedin} className="home-section-center-socials" alt="LINKEDIN" /></a></p>
+                            <p data-aos="fade-up"><a href="https://github.com/robertoakang" target="_blank" rel="noopener noreferrer"><img src={github} className="home-section-center-socials" alt="GITHUB" /></a></p>
+                            <p data-aos="fade-up"><a href="https://facebook.com/robertoakang" target="_blank" rel="noopener noreferrer"><img src={facebook} className="home-section-center-socials" alt="FACEBOOK" /></a></p>
+                            <p data-aos="fade-up"><a href="https://instagram.com/zkatsumi_" target="_blank" rel="noopener noreferrer"><img src={instagram} className="home-section-center-socials" alt="INSTAGRAM"/></a></p>
                         </div>
                     </div>
-                    <div className="home-section-footer">
+                    <div className="home-section-footer" data-aos="fade-right">
                         <h2>Um pouco sobre mim</h2>
                         <p style={{marginTop: "10px"}}>Apaixonado por tecnologia e todo seu ecossistema.</p>
                         <p>Nascido no meio desta revolução tecnológica, aprendi a amar e usar a tecnologia ao meu favor, seja </p>

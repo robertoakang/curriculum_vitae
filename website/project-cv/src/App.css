@@ -2,17 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Share&display=swap');
 
-/* Mobile */
-
-@media only screen and (max-width: 600px) {
-  .home-section-center {
-    width: 75vw !important;
-  }
-  .home-section-center-info-text {
-    font-size: 70%;
-  }
-}
-
 /* Default configs */
 
 * {
@@ -132,7 +121,7 @@ li a {
 }
 
 .home-section-center-photo { 
-  width: 50%; 
+  width: 50%;
   height: 50vh;
   -webkit-box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,1);
@@ -148,7 +137,6 @@ li a {
   width: 50%; 
   height: 50vh;
   background-color: white;
-  color: #000;
   font-family: 'Share', cursive;
   font-size: 1.8em !important;
   color: #1A2155;
@@ -196,7 +184,87 @@ li a {
 
 .skills-section {
   height: 100vh;
-  background-color: mediumaquamarine;
+  background-color: #1A2155;
+}
+
+.skills-section-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #FFFFFF;
+  padding-top: 4%;
+}
+
+.skills-section-title {
+  align-self: center;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  font-size: 3em !important;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+  width: 30%;
+}
+
+.skills-section-center {
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  margin-top: 2%;
+  width: 70vw;
+  height: 65vh;
+  -webkit-box-shadow: 0px -11px 35px 4px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px -11px 35px 4px rgba(0,0,0,0.24);
+  box-shadow: 0px -11px 35px 4px rgba(0,0,0,0.24);
+}
+
+.skills-section-center-info-row {
+  display: flex;
+  height: 100%;
+}
+
+/* Create two equal columns that sits next to each other */
+.skills-section-center-info {
+  flex: 50%;
+  padding: 10px;  
+  width: 55%;
+  height: 100%;
+  padding: 20px;
+}
+
+.skills-section-center-info h4 {  
+  font-family: 'Share', cursive;
+  font-size: 1.4em !important;
+  color: #1A2155;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.skills-section-center-info p {  
+  font-family: 'Share', cursive;
+  font-size: 1.2em !important;
+  color: #1A2155;
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 1.5px;
+  width: 100%;
+  height: 8%;
+}
+
+.skills-section-center-languages-row {
+  display: flex;
+}
+
+.skills-section-center-languages {
+  flex: 50%;
+  padding: 10px;
+  justify-self: center;
+  text-align: center;
+}
+
+.skills-section-center-circle-progress {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
 }
 
 /* Experience */
@@ -218,4 +286,29 @@ li a {
 .contact-section {
   height: 100vh;
   background-color: tomato;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  .home-section-center {
+    width: 75vw !important;
+  }
+  .home-section-center-info-text {
+    font-size: 70%;
+  }
+  .skills-section-center-languages-row {
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+  }  
+  .skills-section-center-languages {
+    flex: 50%;
+    padding: 0px;
+    font-size: 0.3em;
+  }
+  .skills-section-center-circle-progress {
+    width: 30px;
+    height: 30px;
+  }
 }
