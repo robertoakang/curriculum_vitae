@@ -33,7 +33,7 @@ class Home extends Component {
                                 <p style={{fontSize: "0.7em", marginTop: "5px", fontWeight: "500"}}>• Curso Superior de S.I - UNIP (2017/1)</p>
 
                                 <p style={{fontSize: "0.7em", marginTop: "15px", fontWeight: "bold"}}>Tecnologias preferidas:</p>
-                                <p style={{fontSize: "0.7em", marginTop: "5px", fontWeight: "500"}}>React, React Native e NodeJS</p>
+                                <p style={{fontSize: "0.7em", marginTop: "5px", fontWeight: "500"}}>ReactJS, React Native e NodeJS</p>
 
                                 <p style={{fontSize: "0.7em", marginTop: "15px", fontWeight: "bold"}}>Email:</p>
                                 <p style={{fontSize: "0.7em", marginTop: "5px", fontWeight: "500"}}>betoakang@gmail.com</p>

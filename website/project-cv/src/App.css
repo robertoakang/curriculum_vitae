@@ -87,6 +87,7 @@ li a {
 .home-section {
   height: 100vh;
   background: #fff;
+  max-width: 100%;
 }
 
 .home-section-body {
@@ -185,14 +186,14 @@ li a {
 .skills-section {
   height: 100vh;
   background-color: #1A2155;
+  max-width: 100%;
 }
 
 .skills-section-body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  color: #FFFFFF;
-  padding-top: 4%;
+  padding-top: 5.5%;
 }
 
 .skills-section-title {
@@ -203,13 +204,14 @@ li a {
   font-weight: 500;
   border-bottom: 1px solid white;
   width: 30%;
+  color: #FFFFFF;
 }
 
 .skills-section-center {
   background-color: white;
   align-self: center;
   justify-self: center;
-  margin-top: 2%;
+  margin-top: 3%;
   width: 70vw;
   height: 65vh;
   -webkit-box-shadow: 0px -11px 35px 4px rgba(0,0,0,0.24);
@@ -225,7 +227,6 @@ li a {
 /* Create two equal columns that sits next to each other */
 .skills-section-center-info {
   flex: 50%;
-  padding: 10px;  
   width: 55%;
   height: 100%;
   padding: 20px;
@@ -271,13 +272,116 @@ li a {
 
 .exp-section {
   height: 100vh;
-  background-color: mediumpurple;
+  background-color: white;
+  max-width: 100%;
 }
+
+.exp-section-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5.5%;
+}
+
+.exp-section-title {
+  align-self: center;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  font-size: 3em !important;
+  font-weight: 500;
+  border-bottom: 1px solid #1A2155;
+  width: 30%; 
+  color: #1A2155; 
+}
+
+.exp-section-center {
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  margin-top: 3%;
+  width: 70vw;
+  height: 65vh;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.23);
+  box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.23);
+}
+
+.exp-section-center-row {
+  display: flex;
+  height: 100%;
+}
+
+/* Create two equal columns that sits next to each other */
+.exp-section-center-info {
+  flex: 50%;  
+  width: 55%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-section-center-info-year {
+  width: 10%;
+  height: 33%;
+  background-color: #1A2155; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-section-center-info-year label {
+  transform: rotate(180deg);  
+  writing-mode: vertical-rl;
+  color: white;
+  font-size: 3em;
+}
+
+.exp-section-center-info-text {
+  border: 1px solid black;
+  border-left: 0px;
+  width: 90%;
+  height: 33%;
+  font-family: 'Share', cursive;
+}
+
+.exp-section-center-info-text-company {
+  font-size: 1.4em !important;
+  color: #1A2155;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.exp-section-center-info-text-position {
+  font-size: 1.2em !important;
+  color: #1A2155;
+  margin-top: 2px;
+  margin-left: 10px;
+  letter-spacing: 1.5px;
+  width: 100%;
+  height: 8%;
+}
+
+.exp-section-center-info-text-jobDesc {
+  font-size: 1.2em !important;
+  color: #1A2155;
+  margin-top: 20px;
+  margin-left: 15px;
+  letter-spacing: 1.5px;
+  width: 90%;
+  height: 8%;
+}
+
 
 /* Curriculum */
 
 .curriculum-section {
   height: 100vh;
+  max-width: 100%;
   background-color: hotpink;
 }
 
@@ -285,12 +389,15 @@ li a {
 
 .contact-section {
   height: 100vh;
+  max-width: 100%;
   background-color: tomato;
 }
 
 /* Mobile */
 
-@media only screen and (max-width: 600px) {
+@media only  screen 
+and (max-device-width: 740px) 
+and (min-device-width: 0px)  {
   .home-section-center {
     width: 75vw !important;
   }
@@ -308,7 +415,14 @@ li a {
     font-size: 0.3em;
   }
   .skills-section-center-circle-progress {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
   }
+  .exp-section-center-info-year label {
+    font-size: 2em;
+  }
+  .exp-section-center-info-text {
+    font-size: 0.7em;
+  }
+  
 }
